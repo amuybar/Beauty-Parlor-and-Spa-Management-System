@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Parlor and Spa Management</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Beauty Parlor and Spa Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#appointments">Appointments</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Our Beauty Parlor and Spa</h2>
+            <p>Experience the best beauty and spa treatments.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Hair Treatment</li>
+                <li>Nail Treatment</li>
+                <li>Bridal Treatment</li>
+                <li>Body Spa Treatment</li>
+                <li>Face Treatment</li>
+            </ul>
+        </section>
+
+        <section id="appointments">
+            <h2>Book an Appointment</h2>
+            <form id="appointmentForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="service">Service:</label>
+                <select id="service" name="service" required>
+                    <option value="hair">Hair Treatment</option>
+                    <option value="nail">Nail Treatment</option>
+                    <option value="bridal">Bridal Treatment</option>
+                    <option value="body">Body Spa Treatment</option>
+                    <option value="face">Face Treatment</option>
+                </select>
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <button type="submit">Book Appointment</button>
+            </form>
+        </section>
+
+        <section id="feedback">
+            <h2>Feedback</h2>
+            <form id="feedbackForm">
+                <label for="feedbackName">Name:</label>
+                <input type="text" id="feedbackName" name="feedbackName" required>
+
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" required></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: contact@beautyparlor.com</p>
+            <p>Phone: 123-456-7890</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Beauty Parlor and Spa</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
